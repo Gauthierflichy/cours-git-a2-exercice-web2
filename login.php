@@ -21,7 +21,8 @@ if (isset($_POST) && !empty($_POST)) {
 		$email -> 			field value : email
 		$password -> 		field value : password
 	*/
-	userConnection($db, 'git@initiation.com', 'password');
+
+	userConnection($db, 'email', 'password');
 	
 	header('Location: dashboard.php');
 }
